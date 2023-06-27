@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+    int i,numbers[5];
+    float total;
+    printf("Enter the first value = ");
+    scanf("%d",&numbers[0]);
+
+    printf("Enter the second value = ");
+    scanf("%d",&numbers[1]);
+
+    printf("Enter the third value = ");
+    scanf("%d",&numbers[2]);
+
+    printf("Enter the fourth value = ");
+    scanf("%d",&numbers[3]);
+
+    printf("Enter the fifth value = ");
+    scanf("%d",&numbers[4]);
+
+    for ( i = 0; i < 5; i++)
+    {
+        if ((numbers[i]%2) !=0)
+        {
+            total=total+numbers[i];
+        }
+
+    }
+    printf("Sum of odd numbers = %f.",total);
+}
